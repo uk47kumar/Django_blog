@@ -32,8 +32,8 @@
             <a class="nav-link {% block contactactive %}{% endblock contactactive %}" href="/contact">Contact</a>
           </li>
         </ul>
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <form method="get" action="/search" class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" name="query" id="query" >
           <button class="btn btn-outline-success" type="submit">Search</button>
         </form>
         <a href="/admin" role="button" target="_blank" class="btn btn-outline-success m-2 my-sm-0" type="submit">Admin Panel</a>
